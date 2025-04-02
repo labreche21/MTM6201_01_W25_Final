@@ -1,84 +1,25 @@
-/* General Styles */
-/* wireframe.css */
-/* Custom styles for wireframe layout */
-
 body {
-    padding: 20px;
-    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
 }
 
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: #000;
-    color: white;
-    padding: 8px;
-    z-index: 100;
-    transition: top 0.3s;
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.jpg') no-repeat center center/cover;
 }
 
-.skip-link:focus {
-    top: 0;
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 
-.wireframe-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.wireframe-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    border-radius: 4px;
-    font-weight: bold;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    transition: all 0.2s ease;
-}
-
-.wireframe-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.wireframe-header {
-    grid-column: 1 / -1;
-    height: 80px;
-    background-color: #0d6efd;
-    color: white;
-}
-
-.wireframe-footer {
-    grid-column: 1 / -1;
-    height: 60px;
-    background-color: #212529;
-    color: white;
-}
-
-@media (max-width: 768px) {
-    .wireframe-container {
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    }
-    
-    .wireframe-item {
-        height: 50px;
-        font-size: 0.9rem;
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-@media (max-width: 576px) {
-    .wireframe-container {
-        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-    }
-    
-    .wireframe-item {
-        height: 40px;
-        font-size: 0.8rem;
-    }
+.delay {
+    animation-delay: 0.5s;
 }
