@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jakob Designs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger" role="navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black" role="navigation">
         <div class="container">
             <a class="navbar-brand" href="#">Jakob Designs</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center">
+                <a class="nav-link text-white me-3" href="#"><i class="fas fa-user-circle fa-lg"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="bi bi-search"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="bi bi-person-circle"></i></a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-list"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#about">About</a></li>
+                            <li><a class="dropdown-item" href="#services">Services</a></li>
+                            <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -53,12 +67,12 @@
             <form>
                 <input type="text" class="form-control my-2" placeholder="Enter Your Name" required>
                 <input type="email" class="form-control my-2" placeholder="Enter Your Email" required>
-                <button class="btn btn-danger">Send Message</button>
+                <button class="btn btn-black rounded-pill">Send Message</button>
             </form>
         </div>
     </section>
     
-    <footer class="text-center bg-primary text-white py-3">
+    <footer class="text-center bg-black text-white py-3">
         <p>&copy; 2025 Jakob Designs. All Rights Reserved.</p>
     </footer>
     
@@ -66,3 +80,6 @@
     <script src="./js/main.js"></script>
 </body>
 </html>
+
+
+
