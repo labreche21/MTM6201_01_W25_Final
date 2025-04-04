@@ -5,7 +5,7 @@ body {
 
 .hero {
     height: 100vh;
-    background:url('/images/header.jpeg') no-repeat center center/cover;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/header.jpeg') no-repeat center center/cover;
     color: black;
 }
 
